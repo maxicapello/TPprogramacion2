@@ -5,19 +5,60 @@
 
 .IndexBody{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    min-height: 100vh;
     position: relative; 
+        margin: 0;
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* Definir tres filas: encabezado, contenido y pie de página */
+        min-height: 100vh; /* Asegurar que el contenido ocupe al menos toda la altura de la ventana */
 }
 
-.IndexTitle{
-    text-align: center;
-    background-size: cover;
-    width: 100%;
-    margin: 0;
-    padding: 20px 0;
+.tarjeta {
+    width: 400px; /* Ancho fijo para todas las tarjetas */
+    height: 65vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-decoration: none; /* Para quitar el subrayado del enlace */
+    display: inline-block; /* Para que el enlace ocupe solo el espacio que necesite */
+    box-sizing: border-box; /* Para que el padding y border no aumenten el tamaño total */
+    transition: transform 0.2s; /* Transición suave para el cambio de tamaño */
 }
 
-footer {
+.tarjeta:hover {
+  transform: scale(1.05); /* Agrandar la tarjeta cuando se pasa el mouse sobre ella */
+}
+
+.tarjeta img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible dentro de la tarjeta */
+    height: 65%; /* Mantener la proporción de la imagen */
+    border-radius: 5px;
+}
+
+.tarjeta h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.tarjeta .precio {
+    font-size: 1.1em;
+    color: green;
+    margin-top: 5px;
+}
+
+.tarjeta p {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+/* Estilos para las filas */
+.fila {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-left: 20px;
+  }
+  footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
@@ -27,7 +68,7 @@ footer {
 }
 
 .wrapper{
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .Container{

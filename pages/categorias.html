@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../style.css"/>
+    <title>Domodin de Dimsdale</title>
+    <link rel="stylesheet" href="../style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
 
 <body class="IndexBody">
-    <div class="Wrapper">
+    <div class="wrapper">
         <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body"
             data-bs-theme="dark">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html"><img src="https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=home" width="30px" height="30px" alt="Home"></a>
+                            <a class="nav-link active" aria-current="page" href="../index.html"><img
+                                    src="https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=home"
+                                    width="30px" height="30px" alt="Home"></a>
                         </li>
                         <li class="nav-item dropdown me-2">
                             <div class="btn-group">
@@ -28,48 +30,50 @@
                                     <span class="visually-hidden">Toggle Dropdown</span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="electronicos.html">Electrónicos</a></li>
+                                    <li><a class="dropdown-item" href="hogar.html">Hogar</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                  Iniciar Sesión
-                                </button>                              
-                            <div class="dropdown-menu">
-                                <form class="px-2 py-3">
-                                  <div class="mb-3">
-                                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                  </div>
-                                  <div class="mb-3">
-                                    <div class="form-check">
-                                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                      <label class="form-check-label" for="dropdownCheck">
-                                        Recuerdame
-                                      </label>
-                                    </div>
-                                  </div>
-                                  <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                                </form>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Nuevo? Registrate aquí</a>
-                                <a class="dropdown-item" href="#">Olvidaste la contraseña?</a>
-                            </div>
+                                <button type="button" class="btn btn-secondary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Iniciar Sesión
+                                </button>
+                                <div class="dropdown-menu">
+                                    <form class="px-2 py-3">
+                                        <div class="mb-3">
+                                            <label for="exampleDropdownFormEmail1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                                placeholder="email@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleDropdownFormPassword1"
+                                                class="form-label">Password</label>
+                                            <input type="password" class="form-control"
+                                                id="exampleDropdownFormPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <label class="form-check-label" for="dropdownCheck">
+                                                    Recuerdame
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                    </form>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Nuevo? Registrate aquí</a>
+                                    <a class="dropdown-item" href="#">Olvidaste la contraseña?</a>
+                                </div>
                         </li>
                     </ul>
-                    <a class="navbar-brand fw-bold mx-auto px-6">Compra y Venta</a>
+                    <a class="navbar-brand fw-bold mx-auto px-6 ms-2">Compra y Venta</a>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">
@@ -79,12 +83,67 @@
                 </div>
             </div>
         </nav>
-        <section class="IndexSection">
+        <a class="nav-link" href="electronicos.html"><h2>Electrónicos</h2></a>
+                    <div class="fila">
+                <a href="producto1.html" class="tarjeta">
+                    <img src="../assets/ImpresoraBluetooth.jpg" alt="Impresora Bluetooth">
+                    <h3>Impresora Bluetooth</h3>
+                    <p>Categoría: Electrónicos</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="precio">$20.00</p>
+                </a>
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+            </div>
 
-        </section>
+            <a class="nav-link" href="hogar.html"><h2>Hogar</h2></a>
+            <div class="fila">
+                <a href="producto2.html" class="tarjeta">
+                    <img src="../assets/ConjuntoMatero.jpg" alt="Set Matero">
+                    <h3>Set Matero</h3>
+                    <p>Categoría: Hogar</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="precio">$9.99</p>
+                </a>
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+            </div>
+            <a class="nav-link" href="categoria3.html"><h2>Categoría 3</h2></a>
+            <div class="fila">
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+            </div>
+
+            <a class="nav-link" href="categoria4.html"><h2>Categoría 4</h2></a>
+            <div class="fila">
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+                <div class="tarjeta">
+                    <p>Tarjeta vacía</p>
+                </div>
+            </div>
     </div>
     <footer>
-        <section class="Container">
+        <div class="Container">
             <div class="copyright">
                 &copy; 2024 Maximiliano Capello. All rights reserved.
             </div>
@@ -98,7 +157,7 @@
                 <a href="https://www.linkedin.com/#" target="_blank"><img
                         src="https://cdn-icons-png.freepik.com/256/254/254394.png?semt=ais_hybrid" alt="LinkedIn" /></a>
             </div>
-        </section>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
