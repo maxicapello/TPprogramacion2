@@ -14,7 +14,7 @@
 
 .tarjeta {
     width: 400px; /* Ancho fijo para todas las tarjetas */
-    height: 65vh;
+    height: 70vh;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px;
@@ -50,14 +50,17 @@
 .tarjeta p {
     margin-top: 5px;
     font-size: 0.9em;
+    text-align: justify;
 }
 /* Estilos para las filas */
 .fila {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
-    padding-left: 20px;
-  }
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
   footer {
     background-color: #333;
     color: #fff;
