@@ -45,12 +45,14 @@
     font-size: 1.1em;
     color: green;
     margin-top: 5px;
+    height: auto;
 }
 
 .tarjeta p {
     margin-top: 5px;
     font-size: 0.9em;
     text-align: justify;
+    height: 120px;
 }
 /* Estilos para las filas */
 .fila {
