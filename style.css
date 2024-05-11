@@ -13,6 +13,7 @@
         background: rgba(29, 31, 32, 0.904)
         radial-gradient(rgba(255, 255, 255, 0.712) 10%, transparent 1%);
       background-size: 11px 11px;
+      width: 100vw;
 }
 h2{
     color: #f9f9f9 !important;
@@ -23,7 +24,6 @@ h2{
     height: 70vh;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 10px;
     padding: 10px;
     background-color: #f9f9f9;
     text-decoration: none; /* Para quitar el subrayado del enlace */
@@ -58,7 +58,7 @@ h2{
     margin-top: 5px;
     font-size: 0.9em;
     text-align: justify;
-    height: 120px;
+    height: 110px;
 }
 /* Estilos para las filas */
 .fila {
@@ -66,7 +66,8 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 10px;
+    padding-right: 10px;
 }
 
   footer {
