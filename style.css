@@ -38,7 +38,7 @@ h2{
 
 .tarjeta img {
     width: 100%; /* La imagen ocupará todo el ancho disponible dentro de la tarjeta */
-    height: 65%; /* Mantener la proporción de la imagen */
+    height: 55%; /* Mantener la proporción de la imagen */
     border-radius: 5px;
 }
 
