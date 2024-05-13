@@ -65,8 +65,7 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     margin-top: 20px;
-    margin-left: 10px;
-    padding-right: 10px;
+    justify-items: center;
 }
 
   footer {
@@ -213,6 +212,68 @@ h2{
   .offcanvas-body .navbar-nav .nav-item {
     margin-bottom: 10px; /* Ajusta el margen inferior entre elementos del menú */
   }
+
+ .slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    transition: transform 0.5s ease;
+    border: solid #000 2px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev {
+    left: 20%;
+}
+
+button.next {
+    right: 20%;
+}
+
+table {
+    width: 60vw;
+    justify-self: center;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    color: #fff;
+}
+
   @media (max-width: 991.98px) {
     .offcanvas-body .navbar-brand {
       display: none; /* Ocultar la navbar-brand en el modo offcanvas */
