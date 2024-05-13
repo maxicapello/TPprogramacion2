@@ -216,7 +216,7 @@ h2{
  .slider-container {
     position: relative;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -225,7 +225,7 @@ h2{
     height: 50vh;
     display: flex;
     transition: transform 0.5s ease;
-    border: solid #000 2px;
+    border: solid gray 3px;
 }
 
 .slider img {
@@ -250,28 +250,34 @@ button.prev:hover, button.next:hover {
 }
 
 button.prev {
-    left: 20%;
+  justify-self: start;
+  margin-left: 15vw;
 }
 
 button.next {
-    right: 20%;
+  justify-self: end;
+  margin-right: 14vw;
 }
 
 table {
     width: 60vw;
     justify-self: center;
     margin-bottom: 20px;
-    border-collapse: collapse;
+    border-collapse: separate;
+    background-color: #6d6d6d;
+    border-radius: 10px; 
+    border-spacing: 0;
 }
 
 table, th, td {
-    border: 1px solid #ccc;
-    color: #fff;
+  color: #f6f6f6;
+  max-width: 150px; /* Establecer un ancho máximo para las celdas */
+  white-space: nowrap; /* Evitar que el contenido se ajuste automáticamente */
 }
 
 th, td {
     padding: 10px;
-    color: #fff;
+    color: #f6f6f6;
 }
 
   @media (max-width: 991.98px) {
