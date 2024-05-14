@@ -26,4 +26,5 @@ function prevSlide() {
 }
 
 // Auto-avance de diapositivas cada 3 segundos
+nextSlide(); // Iniciar la primera diapositiva de inmediato
 setInterval(nextSlide, 3000);
