@@ -238,7 +238,6 @@ footer {
   /* Ajusta este valor según tus necesidades */
   margin: auto;
   /* Centrar el carrusel horizontalmente */
-  padding: 20px;
 }
 
 .carousel-item img {
@@ -250,8 +249,8 @@ footer {
 
 .table-container {
   max-width: 700px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
   justify-content: center;
 }
 
