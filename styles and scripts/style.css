@@ -23,7 +23,7 @@ h2 {
 .tarjeta {
   width: 400px;
   /* Ancho fijo para todas las tarjetas */
-  height: 70vh;
+  height: 60vh;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
@@ -234,7 +234,7 @@ footer {
 }
 
 .carousel {
-  width: 800px !important;
+  width: 750px !important;
   /* Ajusta este valor según tus necesidades */
   margin: auto;
   /* Centrar el carrusel horizontalmente */
@@ -243,7 +243,7 @@ footer {
 .carousel-item img {
   width: 100% !important;
   height: 65vh;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 1s ease, opacity 1s ease;
 }
 
 
@@ -264,7 +264,6 @@ table {
 
 th,
 td {
-  border: 1px solid #ebebeb;
   padding: 12px;
 }
 
