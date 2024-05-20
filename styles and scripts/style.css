@@ -234,10 +234,11 @@ footer {
 }
 
 .carousel {
-  width: 750px !important;
+  width: 50vw !important;
   /* Ajusta este valor según tus necesidades */
   margin: auto;
   /* Centrar el carrusel horizontalmente */
+  padding: 20px;
 }
 
 .carousel-item img {
@@ -279,5 +280,11 @@ tr:nth-child(even) {
   .offcanvas-body .navbar-brand {
     display: none;
     /* Ocultar la navbar-brand en el modo offcanvas */
+  }
+  .carousel{
+    width: 90vw !important;
+  }
+  .table-container{
+    width: 90vw !important;
   }
 }
