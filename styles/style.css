@@ -76,10 +76,9 @@ h2{
 .tarjeta {
   width: 400px;
   height: 60vh;
-  border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg,  #f3c556, #fbeeca);
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
@@ -95,11 +94,16 @@ h2{
   width: 100%;
   height: 55%;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .tarjeta h3 {
   margin-top: 10px;
   font-size: 1.2em;
+  color: #212121;
+}
+.tarjeta h4{
+  font-size: 1rem;
 }
 
 .tarjeta .precio {
