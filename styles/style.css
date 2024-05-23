@@ -16,8 +16,9 @@ body {
 .IndexBody {
   background: linear-gradient(135deg, #2c3e50, #4b0082);
   display: flex;
-  min-height: 100vh;
+  height: 100%;
   margin: 0;
+  width: 100vw;
   align-items: center;
   color: #ffffff;
   position: relative;
@@ -62,6 +63,9 @@ body {
 
 .overlay-click-transition {
   cursor: pointer;
+}
+.home-header-h1-span-line-2{
+  padding-left: 6vw;
 }
 
 h2{
@@ -334,9 +338,23 @@ tr:nth-child(even) {
     width: 90vw !important;
   }
   .fila{
-    padding: 0;
+    width: 100vw;
+    justify-content: center;
   }
   .tarjeta{
     height: 80vh;
+    width: 90vw;
+
+  }
+  .home-header-h1 {
+    font-size: 15vw !important;
+    justify-self: center;
+    padding: 7px;
+  }
+  .home-header-h1-span-line-2{
+    padding-left: 30px;
+  }
+  .home-header-h1-span-line-2 .single-char:nth-child(2) {
+    display: none !important;
   }
 }
