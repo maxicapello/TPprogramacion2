@@ -31,6 +31,7 @@ body {
 h1{
   background-image: linear-gradient(to right, #f8e09a, #f3c556) !important;
   -webkit-background-clip: text !important;
+  background-clip: text;
   color: transparent;
   font-family: NB Architekt Pro, Arial, sans-serif;
 }
