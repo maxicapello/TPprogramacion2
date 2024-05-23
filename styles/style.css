@@ -3,51 +3,93 @@
   padding: 0;
 }
 
-.IndexBody {
+body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  /* Asegurar que el contenido ocupe al menos toda la altura de la ventana */
-  background-color: #42044e;
+  background: linear-gradient(135deg, #2c3e50, #4b0082);
   width: 100vw;
 }
+.IndexBody {
+  background: linear-gradient(135deg, #2c3e50, #4b0082);
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+  color: #ffffff;
+  position: relative;
+  user-select: none; 
+  font-family: NB Architekt Pro, Arial, sans-serif;
+  justify-content: center;
+}
+.single-word {
+  display: inline-block;
+}
 
-h2 {
-  color: #f9f9f9 !important;
-  margin-top: 20px !important;
+.single-char {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+.home-header-h1-span-line-1 .single-char:nth-child(1) { animation-delay: 0.1s; }
+.home-header-h1-span-line-1 .single-char:nth-child(2) { animation-delay: 0.2s; }
+.home-header-h1-span-line-1 .single-char:nth-child(3) { animation-delay: 0.3s; }
+.home-header-h1-span-line-1 .single-char:nth-child(4) { animation-delay: 0.4s; }
+.home-header-h1-span-line-1 .single-char:nth-child(5) { animation-delay: 0.5s; }
+.home-header-h1-span-line-1 .single-char:nth-child(6) { animation-delay: 0.6s; }
+
+.home-header-h1-span-line-2 .single-char:nth-child(1) { animation-delay: 0.7s; }
+.home-header-h1-span-line-2 .single-char:nth-child(2) { animation-delay: 0.8s; }
+.home-header-h1-span-line-2 .single-char:nth-child(3) { animation-delay: 0.9s; }
+.home-header-h1-span-line-2 .single-char:nth-child(4) { animation-delay: 1s; }
+.home-header-h1-span-line-2 .single-char:nth-child(5) { animation-delay: 1.1s; }
+.home-header-h1-span-line-2 .single-char:nth-child(6) { animation-delay: 1.2s; }
+.home-header-h1-span-line-2 .single-char:nth-child(7) { animation-delay: 1.3s; }
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); 
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.overlay-click-transition {
+  cursor: pointer;
+}
+
+h2{
+  color: #fff !important;
+  margin-right: 20px !important;
 }
 
 .tarjeta {
   width: 400px;
-  /* Ancho fijo para todas las tarjetas */
-  height: 70vh;
+  height: 60vh;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   background-color: #f9f9f9;
   text-decoration: none;
-  /* Para quitar el subrayado del enlace */
   display: inline-block;
-  /* Para que el enlace ocupe solo el espacio que necesite */
   box-sizing: border-box;
-  /* Para que el padding y border no aumenten el tamaño total */
   transition: transform 0.2s;
-  /* Transición suave para el cambio de tamaño */
+  margin-bottom: 20px;
 }
 
 .tarjeta:hover {
   transform: scale(1.05);
-  /* Agrandar la tarjeta cuando se pasa el mouse sobre ella */
 }
 
 .tarjeta img {
   width: 100%;
-  /* La imagen ocupará todo el ancho disponible dentro de la tarjeta */
   height: 55%;
-  /* Mantener la proporción de la imagen */
   border-radius: 5px;
 }
 
@@ -67,10 +109,9 @@ h2 {
   margin-top: 5px;
   font-size: 0.9em;
   text-align: justify;
-  min-height: 110px;
+  height: 110px;
 }
 
-/* Estilos para las filas */
 .fila {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -83,13 +124,10 @@ h2 {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
   position: absolute;
-  /* Cambiamos la posición a absoluta */
   bottom: 0;
-  /* Situamos el footer al final del body */
   width: 100%;
-  /* Ancho completo */
 }
 
 .wrapper {
@@ -115,14 +153,13 @@ footer {
 
 .social-links img {
   width: 30px;
-  /* Ajusta el ancho de los iconos */
   height: auto;
-  /* Mantiene la proporción de aspecto */
 }
 
 .copyright {
   font-size: 14px;
   padding: 10px;
+  padding-top: 20px;
 }
 
 .form-container {
@@ -233,7 +270,18 @@ footer {
   margin-bottom: 10px;
   /* Ajusta el margen inferior entre elementos del menú */
 }
+.btn-primary{
+  background-color: #303C5F !important;
+  border-color: #fff !important; 
+}
 
+.btn-outline-success{
+  color: #FC75B2 !important;
+  border-color: #FC75B2 !important;
+}
+.btn-outline-success:hover{
+  background-color: #79198f !important;
+}
 .carousel {
   width: 50vw !important;
   /* Ajusta este valor según tus necesidades */
@@ -275,11 +323,9 @@ th {
 tr:nth-child(even) {
   background-color: #fafafa;
 }
-
 @media (max-width: 991.98px) {
   .offcanvas-body .navbar-brand {
     display: none;
-    /* Ocultar la navbar-brand en el modo offcanvas */
   }
   .carousel{
     width: 90vw !important;
