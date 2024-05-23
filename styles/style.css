@@ -14,18 +14,27 @@ body {
   width: 100vw;
 }
 .IndexBody {
-  background: linear-gradient(135deg, #2c3e50, #4b0082);
   display: flex;
   height: 100%;
   margin: 0;
   width: 100vw;
   align-items: center;
-  color: #ffffff;
   position: relative;
   user-select: none; 
-  font-family: NB Architekt Pro, Arial, sans-serif;
   justify-content: center;
+  background: linear-gradient(135deg, #2c3e50, #4b0082);
 }
+.brand{
+  font-size: 1.5rem !important;
+  align-self: center !important;
+}
+h1{
+  background-image: linear-gradient(to right, #f8e09a, #f3c556) !important;
+  -webkit-background-clip: text !important;
+  color: transparent;
+  font-family: NB Architekt Pro, Arial, sans-serif;
+}
+
 .single-word {
   display: inline-block;
 }
@@ -333,7 +342,7 @@ tr:nth-child(even) {
   background-color: #fafafa;
 }
 @media (max-width: 991.98px) {
-  .offcanvas-body .navbar-brand {
+  .offcanvas-body .brand {
     display: none;
   }
   .carousel{
