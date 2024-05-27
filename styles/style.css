@@ -26,15 +26,15 @@ h1 {
   font-family: 'NB Architekt Pro', Arial, sans-serif;
 }
 .brand{
-  font-size: 1.5rem !important;
-  align-self: center !important;
-  color: #f3c556 !important;
+  font-size: 1.5rem;
+  align-self: center;
+  color: #f3c556;
 }
 .home-header-h1-span-line-1{
-  color: #fbeeca !important;
+  color: #fbeeca;
 }
 .home-header-h1-span-line-2{
-  color: #f3c556 !important;
+  color: #f3c556;
 }
 .single-word {
   display: inline-block;
@@ -79,8 +79,8 @@ h1 {
 }
 
 h2{
-  color: #fbeeca !important;
-  margin-right: 20px !important;
+  color: #fbeeca;
+  margin-right: 20px;
 }
 
 .tarjeta {
@@ -290,26 +290,26 @@ footer {
   /* Ajusta el margen inferior entre elementos del menú */
 }
 .btn-primary{
-  background-color: #303C5F !important;
-  border-color: #fff !important; 
+  background-color: #303C5F;
+  border-color: #fff; 
 }
 
 .btn-outline-success{
-  color: #FC75B2 !important;
-  border-color: #FC75B2 !important;
+  color: #FC75B2 ;
+  border-color: #FC75B2 ;
 }
 .btn-outline-success:hover{
-  background-color: #79198f !important;
+  background-color: #79198f ;
 }
 .carousel {
-  width: 50vw !important;
+  width: 50vw ;
   /* Ajusta este valor según tus necesidades */
   margin: auto;
   /* Centrar el carrusel horizontalmente */
 }
 
 .carousel-item img {
-  width: 100% !important;
+  width: 100% ;
   height: 65vh;
   transition: transform 1s ease, opacity 1s ease;
 }
@@ -347,10 +347,10 @@ tr:nth-child(even) {
     display: none;
   }
   .carousel{
-    width: 90vw !important;
+    width: 90vw ;
   }
   .table-container{
-    width: 90vw !important;
+    width: 90vw ;
   }
   .fila{
     width: 100vw;
@@ -361,10 +361,13 @@ tr:nth-child(even) {
     width: 90vw;
 
   }
+  .tarjeta p{
+    max-height: fit-content;
+  }
   .home-header-h1 {
     font-size: 15vw !important;
     justify-self: center;
-    padding: 7px;
+    padding: 5px;
   }
   .home-header-h1-span-line-2{
     padding-left: 30px;
