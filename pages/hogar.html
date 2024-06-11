@@ -18,7 +18,7 @@
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" data-bs-backdrop="false"
         aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
@@ -51,7 +51,7 @@
                 data-bs-target="#loginModal">
                 Iniciar Sesión
               </button>
-              <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+              <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" data-bs-backdrop="false"
                 aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -86,7 +86,7 @@
           </ul>
           <h1 class="brand fw-bold mx-auto px-6 ms-2 pt-2">Compra y Venta</h1>
           <div class="d-flex align-items-center pe-2 pb-1">
-            <button type="button" class="btn btn-outline-secondary position-relative" id="cart-button">
+            <button type="button" class="btn btn-outline-secondary position-relative d-none" id="cart-button">
               <img src="https://img.icons8.com/ios-glyphs/30/shopping-cart.png" alt="Carrito de compras">
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
             </button>

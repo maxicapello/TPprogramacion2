@@ -381,7 +381,7 @@ closeButton.addEventListener('click', function () {
         // Verificar las credenciales del usuario
         if (checkCredentials(email, password)) {
             setCookie('loggedIn', 'true', 1);
-            showSuccessAlert("Credenciales correctas. ¡Bienvenido en 3... 2... 1!");
+            showSuccessAlert("Credenciales correctas. ¡Bienvenido...");
             checkLoginStatus();
             setTimeout(redirigirACategorias, 2000); // Redirige a categorías después de 2 segundos
         } else {
@@ -392,7 +392,7 @@ closeButton.addEventListener('click', function () {
     // Botón de logout
     logoutButton.addEventListener("click", function () {
         setCookie('loggedIn', 'false', 1); // Establece la cookie por 1 día
-        showSuccessAlert("¡Has cerrado sesión correctamente! Saliendo en 3... 2... 1");
+        showSuccessAlert("¡Has cerrado sesión correctamente! Saliendo...");
         checkLoginStatus();
         setTimeout(redirigirACategorias, 2000); // Redirige a categorías después de 2 segundos
     });
