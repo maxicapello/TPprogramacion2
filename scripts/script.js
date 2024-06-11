@@ -381,7 +381,7 @@ closeButton.addEventListener('click', function () {
         // Verificar las credenciales del usuario
         if (checkCredentials(email, password)) {
             setCookie('loggedIn', 'true', 1);
-            showSuccessAlert("Credenciales correctas. ¡Bienvenido...");
+            showSuccessAlert("!Credenciales correctas¡ Bienvenido...");
             checkLoginStatus();
             setTimeout(redirigirACategorias, 2000); // Redirige a categorías después de 2 segundos
         } else {
