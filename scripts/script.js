@@ -212,12 +212,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Función para manejar el evento de clic en el botón de compra
     function handleBuyButtonClick() {
         const buyButtons = document.querySelectorAll(".buyButton");
+        const loggedIn = getCookie('loggedIn') === 'true';
         buyButtons.forEach(button => {
             button.addEventListener("click", event => {
+                if (loggedIn){
+                    showSuccessAlert("¡Agregado correctamente!");
                 const tarjetaTitle = document.querySelector(".productTitle").textContent;
                 const tarjetaPrice = document.querySelector(".productPrice").textContent;
                 const precioDigitos = tarjetaPrice.match(/\$\d+(?:\.\d+)?/);
                 addToCart(tarjetaTitle, precioDigitos);
+                }
+                else{
+                    showErrorAlert("Debes iniciar sesión para realizar la compra.");
+                }
             });
         });
     }
