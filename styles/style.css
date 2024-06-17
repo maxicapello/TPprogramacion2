@@ -198,16 +198,15 @@ h2 {
   font-size: 1rem;
 }
 .tarjeta .precio {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: green;
   margin-top: 5px;
-  height: auto;
 }
 .tarjeta p {
   margin-top: 5px;
   font-size: 0.9em;
   text-align: justify;
-  max-height: 110px;
+  max-height: 15%;
 }
 
 .fila {
