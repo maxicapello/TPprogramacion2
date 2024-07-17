@@ -1,0 +1,39 @@
+.offcanvas-body .brand {
+    display: none;
+  }
+
+  .carousel {
+    width: 90vw;
+  }
+
+  .table-container {
+    width: 90vw;
+  }
+
+  .fila {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .tarjeta {
+    height: 80vh;
+    width: 90vw;
+
+    p {
+      max-height: fit-content;
+    }
+  }
+
+  .home-header-h1 {
+    font-size: 15vw !important;
+    justify-self: center;
+    padding: 5px;
+  }
+
+  .home-header-h1-span-line-2 {
+    padding-left: 30px;
+
+    .single-char:nth-child(2) {
+      display: none !important;
+    }
+  }

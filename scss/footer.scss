@@ -1,0 +1,41 @@
+footer {
+    background-color: $footer-bg;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .wrapper {
+    margin-bottom: 150px;
+  }
+  
+  .Container {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+  
+    a {
+      margin-right: 10px;
+      color: #fff;
+      display: inline-block;
+    }
+  
+    img {
+      width: 30px;
+      height: auto;
+      background-color: #fff;
+    }
+  }
+  
+  .copyright {
+    font-size: 14px;
+    padding: 10px;
+    padding-top: 20px;
+  }
